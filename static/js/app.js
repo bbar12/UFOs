@@ -43,28 +43,32 @@ function updateFilters() {
   if (date) {
     filters["datetime"] = date
   } else if ("datetime" in filters) {
-      delete filters["datetime"]
-  };
+    delete filters["datetime"]
+    };
+
   if (city) {
     filters["city"] = city
   } else if ("city" in filters) {
     delete filters["city"]
-  };
+    };
+
   if (state) {
     filters["state"] = state
   } else if ("state" in filters) {
     delete filters["state"]
-  };
+    };
+
   if (country) {
     filters["country"] = country
   } else if ("country" in filters) {
     delete filters["country"]
-  };
+    };
+
   if (shape) {
     filters["shape"] = shape
   } else if ("shape" in filters) {
     delete filters["shape"]
-  };
+    };
 
   filterTable();
 }
